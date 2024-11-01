@@ -1,0 +1,28 @@
+---
+import type { ProjectTag } from "../utils/Projects";
+
+interface Props {
+  text: ProjectTag;
+}
+
+const { text } = Astro.props;
+
+const tagColors: Record<ProjectTag, string> = {
+  "React.js": "bg-blue-400 text-blue-900",
+  "Tailwind CSS": "bg-green-400 text-green-900",
+  Astro: "bg-purple-400 text-purple-900",
+  Zustand: "bg-yellow-400 text-yellow-900",
+  "Node.js": "bg-green-400 text-green-900",
+  "Express.js": "bg-red-400 text-red-900",
+  Python: "bg-blue-400 text-blue-900",
+  "Web scraping": "bg-orange-400 text-orange-900",
+  "Next.js": "bg-black-400 text-black-900",
+};
+
+const defaultTagColor = "bg-fuchsia-400 text-fuchsia-900";
+const tagColor = tagColors[text] || defaultTagColor;
+---
+
+<span class={`rounded-md px-2 py-1 text-xs font-semibold ${tagColor}`}>
+  {text}
+</span>

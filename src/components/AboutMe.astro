@@ -1,0 +1,30 @@
+---
+import giulianoDiazPhoto from "../assets/img/giuliano-diaz-photo.jpeg";
+import { Image } from "astro:assets";
+import { descriptions } from "../utils/Descriptions";
+---
+
+<section
+  class="container flex flex-col-reverse justify-between items-center gap-20 md:flex-row"
+>
+  <div>
+    <h1
+      class="bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent text-3xl font-bold"
+    >
+      Software Development
+    </h1>
+    <div class="mt-6">
+      {
+        descriptions.map((description) => (
+          <p class="mt-6 text-xl leading-9">{description}</p>
+        ))
+      }
+    </div>
+  </div>
+  <Image
+    src={giulianoDiazPhoto}
+    alt="Giuliano Diaz"
+    loading="eager"
+    class="rounded-xl object-cover w-80 h-80"
+  />
+</section>
