@@ -1,0 +1,25 @@
+---
+import Layout from "@layouts/Layout.astro";
+
+const posts = await Astro.glob('./*.md');
+
+---
+
+<Layout title="Giuliano Díaz: blogs">
+  <main>
+    <header class="container">
+      <section class="text-center">
+        <h1 class="text-3xl font-bold">Bienvenido a mi Blog 🗒️</h1>
+        <h3 class="mt-3 text-gray-200">
+          Aquí encontrarás artículos sobre tecnología, desarrollo web y más.
+        </h3>
+      </section>
+    </header>
+
+    <article class="container">
+      {
+        posts.map(c => c.url)
+      }
+    </article>
+  </main>
+</Layout>
