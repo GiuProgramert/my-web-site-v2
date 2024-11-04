@@ -1,6 +1,8 @@
 ---
-import { projects } from "../utils/Projects";
+import { projects } from "@utils/Projects";
+
 import Tag from "./Tag.astro";
+import ProjectImg from "./ProjectImg.astro";
 ---
 
 <section class="container">
@@ -8,15 +10,18 @@ import Tag from "./Tag.astro";
     <span
       class="bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent"
     >
-      Proyectos</span
-    > recientes
+      Proyectos
+    </span>
+    <span>recientes</span>
   </div>
 
   <div class="flex flex-col gap-6">
     {
       projects.map((project) => (
-        <div class="flex flex-col items-center gap-x-8 rounded-md bg-slate-800 p-3 md:flex-row">
-          <div>{/* Add image */}</div>
+        <div class="flex flex-col items-center gap-8 rounded-md bg-slate-800 p-3 md:flex-row md:mb-auto">
+          <div class="flex justify-center items-center">
+            <ProjectImg project={project} />
+          </div>
           <div>
             <div class="flex flex-col items-center gap-y-2 md:flex-row">
               <a href={project.url} target="_blank" class="hover:text-cyan-400">

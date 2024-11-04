@@ -1,0 +1,30 @@
+---
+import { Image } from "astro:assets";
+import type { Project } from "@interfaces/projects";
+import Memo from "@img/memo.png";
+
+interface Props {
+  project: Project;
+}
+
+const {
+  project: { img, name, imgLoading, imgClassName },
+} = Astro.props;
+
+const imgClassList = ["aspect-square", imgClassName, { "w-16": !imgClassName }];
+---
+
+<Fragment>
+  {
+    img ? (
+      <Image
+        src={img}
+        alt={name}
+        loading={imgLoading}
+        class:list={imgClassList}
+      />
+    ) : (
+      <Image src={Memo} alt={name} class="aspect-square w-16" />
+    )
+  }
+</Fragment>
