@@ -24,9 +24,24 @@ import ProjectImg from "./ProjectImg.astro";
           </div>
           <div>
             <div class="flex flex-col items-center gap-y-2 md:flex-row">
-              <a href={project.url} target="_blank" class="hover:text-cyan-400">
-                <h2 class="text-xl font-semibold">{project.name}</h2>
-              </a>
+              <div class="flex gap-1 items-center">
+                <a
+                  href={project.url}
+                  target="_blank"
+                  class="hover:text-cyan-400"
+                >
+                  <h2 class="text-xl font-semibold">{project.name}</h2>
+                </a>
+                {project.sourceUrl && (
+                  <a
+                    href={project.sourceUrl}
+                    target="_blank"
+                    class="hover:text-gray-500"
+                  >
+                    <h2 class="text-sm font-semibold text-gray-400">[source code]</h2>
+                  </a>
+                )}
+              </div>
               <div class="ml-3 flex gap-2">
                 {project.tags.map((tag) => (
                   <Tag text={tag} />

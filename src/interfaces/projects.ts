@@ -14,6 +14,7 @@ export interface Project {
   description: string;
   tags: ProjectTag[];
   url: string;
+  sourceUrl?: string;
   img?: ImageMetadata;
   imgClassName?: string;
   imgLoading?: "eager" | "lazy";
