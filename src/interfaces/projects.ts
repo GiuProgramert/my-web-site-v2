@@ -7,7 +7,10 @@ export type ProjectTag =
   | "Express.js"
   | "Python"
   | "Web scraping"
-  | "Next.js";
+  | "Next.js"
+  | "TypeScript"
+  | "Django REST Framework"
+  | "Django";
 
 export interface Project {
   name: string;

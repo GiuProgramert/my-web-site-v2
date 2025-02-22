@@ -2,8 +2,20 @@ import type { Project } from "@interfaces/projects";
 
 import RobotFace from "@img/robot-face.png";
 import SpotifyLogo from "@img/spotify-primary-Logo.png";
+import Clipboard from "@img/clipboard.svg";
 
 export const projects: Project[] = [
+  {
+    name: "URL Shorter",
+    description:
+      "This project consists of a backend API built with Django REST Framework and a frontend application built with React and TypeScript. The URL Shortener service allows users to create shortened URLs and manage their accounts.",
+    tags: ["React.js", "TypeScript", "Django REST Framework", "Django", "Tailwind CSS"],
+    url: "http://67.205.145.151/",
+    sourceUrl: "https://github.com/GiuProgramert/url_shorter",
+    img: Clipboard,
+    imgLoading: "lazy",
+    imgClassName: "w-28",
+  },
   {
     name: "Spotify Clone",
     description:
