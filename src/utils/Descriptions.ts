@@ -1,5 +1,5 @@
 export const descriptions = [
-  "Soy apasionado de la programación y el desarrollo de software. Me encanta resolver problemas y crear soluciones innovadoras.",
-  "Estoy especializado en el desarrollo de aplicaciones web. Tengo experiencia en el desarrollo de aplicaciones con tecnologías como Next.js, React, Django, Laravel, entre muchas otras",
-  "Me gusta aprender nuevas tecnologías y compartir mis conocimientos con la comunidad. Siempre estoy en constante aprendizaje y me gusta estar al tanto de las últimas tendencias en tecnología.",
+  "I am a passionate Software Developer and programming enthusiast. I love solving problems and create innovative solutions.",
+  "I specialize in Web Applicattion development and have experience working with technologies like Next.js, React, Django, Laravel, and many others",
+  "I enjoy learning about new technologies and sharing my knowledge with the community. I am always learning and stay up to date with the latest trends in technology.",
 ];

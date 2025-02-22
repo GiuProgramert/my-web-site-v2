@@ -13,7 +13,7 @@ export const projects: Project[] = [
     sourceUrl: "https://github.com/GiuProgramert/spotify-clone",
     img: SpotifyLogo,
     imgClassName: "w-28",
-    imgLoading: "eager",
+    imgLoading: "lazy",
   },
   {
     name: "Booking App",

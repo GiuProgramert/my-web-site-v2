@@ -10,24 +10,25 @@ import { es } from "date-fns/locale";
     <span
       class="bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent"
     >
-      Experiencias
+      Latest
     </span>
-    <span>recientes</span>
+    <span>work experience</span>
   </div>
 
   <div class="flex flex-col gap-6">
     {
       experiences.map(
-        ({ urlImg, company, title, description, toDate, fromDate }) => (
+        ({ urlImg, company, title, description, toDate, fromDate, imgLoading }) => (
           <div>
-            <div class="flex flex-col items-center gap-8 rounded-md bg-slate-800 p-3 md:flex-row md:mb-auto">
+            <div class="flex flex-col items-center gap-8 rounded-md bg-slate-800 p-3 px-6 md:flex-row md:mb-auto">
               <div class="flex justify-center items-start h-full">
-                <img
+                <Image
                   src={urlImg}
                   alt={`${company} logo`}
-                  class="rounded-full"
+                  class="rounded-xl"
                   width={100}
                   height={100}
+                  loading={imgLoading}
                 />
               </div>
               <div>

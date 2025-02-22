@@ -5,4 +5,5 @@ export interface Experience {
   company: string;
   fromDate: Date;
   toDate: Date | null;
+  imgLoading?: "eager" | "lazy";
 }
