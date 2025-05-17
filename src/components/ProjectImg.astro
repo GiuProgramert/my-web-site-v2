@@ -11,7 +11,7 @@ const {
   project: { img, name, imgLoading, imgClassName },
 } = Astro.props;
 
-const imgClassList = ["aspect-square", imgClassName, { "w-16": !imgClassName }];
+const imgClassList = ["aspect-square object-fit", imgClassName, { "w-16": !imgClassName }];
 ---
 
 <Fragment>

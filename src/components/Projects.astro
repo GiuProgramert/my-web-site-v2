@@ -44,7 +44,7 @@ import ProjectImg from "./ProjectImg.astro";
                   </a>
                 )}
               </div>
-              <div class="ml-3 flex gap-2">
+              <div class="ml-3 flex flex-wrap md:justify-start justify-center gap-2">
                 {project.tags.map((tag) => (
                   <Tag text={tag} />
                 ))}

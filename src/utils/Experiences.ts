@@ -1,19 +1,20 @@
 import type { Experience } from "@interfaces/experience";
+import ItaeLogo from "@img/itae.jpeg";
+import ParacanLogo from "@img/paracan.jpeg";
+import CodysLogo from "@img/codys.jpeg";
 
 export const experiences: Experience[] = [
   {
-    urlImg:
-      "https://media.licdn.com/dms/image/v2/C4D0BAQGglHxEK4IXyg/company-logo_100_100/company-logo_100_100/0/1670327813788?e=1745452800&v=beta&t=CYqOQeJIGGywBlK_F0kZDYafwr_cPB9nOVqkcII1NYg",
+    urlImg: ItaeLogo,
     title: "Frontend Developer",
     description: "Homebanking Redesign - Solar Bank Paraguay",
     company: "Itae Paraguay",
     fromDate: new Date("2024-04-01"),
     toDate: null,
-    imgLoading: "eager"
+    imgLoading: "eager",
   },
   {
-    urlImg:
-      "https://media.licdn.com/dms/image/v2/C4D0BAQGzgHC_OQ1iBA/company-logo_100_100/company-logo_100_100/0/1654955661323?e=1745452800&v=beta&t=npsq2BbKcWpIazx93CSdpjv4uIOnlgBgx4MOdNRcppY",
+    urlImg: ParacanLogo,
     title: "Full Stack Developer",
     description: [
       "Frontend Development with React",
@@ -27,8 +28,7 @@ export const experiences: Experience[] = [
     toDate: new Date("2024-04-05"),
   },
   {
-    urlImg:
-      "https://media.licdn.com/dms/image/v2/D4D0BAQFjp4wQNkmMSw/company-logo_100_100/company-logo_100_100/0/1683046501615?e=1745452800&v=beta&t=pHr4YGFe3dSjUsBt2lQiVgrO1pqIEC4vHn4RNsJYaiE",
+    urlImg: CodysLogo,
     title: "Full Stack Developer",
     description: [
       "Laravel Development",

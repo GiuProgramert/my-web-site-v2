@@ -1,5 +1,7 @@
+import type { ImageMetadata } from "astro";
+
 export interface Experience {
-  urlImg: string;
+  urlImg: ImageMetadata;
   title: string;
   description: string | string[];
   company: string;
