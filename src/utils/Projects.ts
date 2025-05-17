@@ -13,7 +13,7 @@ export const projects: Project[] = [
     tags: ["React.js", "Tailwind CSS", "Next.js", "TypeScript"],
     url: "https://codridge-dev.netlify.app/",
     imgLoading: "lazy",
-    imgClassName: "w-20 aspect-auto",
+    imgClassName: "w-20 !aspect-auto",
     img: CodridgeLogo,
   },
   {
